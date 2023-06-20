@@ -15,7 +15,7 @@ export default async function Home() {
   );
 }
 
-export async function fetchData() {
+async function fetchData() {
   let sbParams = {
     version: "draft",
     resolve_relations: ["showcase.projects", "project.Categories"],
