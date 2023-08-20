@@ -1,7 +1,7 @@
 // @ts-ignore
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react/rsc";
 
-const Section = ({ blok }: any) => {
+const Section = ({ blok }) => {
   return (
     <div
       style={{
@@ -10,7 +10,7 @@ const Section = ({ blok }: any) => {
       className={`px-5 py-12 md:px-10`}
       {...storyblokEditable(blok)}
     >
-      {blok.content.map((nestedBlok: any) => (
+      {blok.content.map((nestedBlok) => (
         <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
       ))}
     </div>
