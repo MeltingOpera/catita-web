@@ -1,6 +1,4 @@
-// @ts-ignore
 import { getStoryblokApi } from "@storyblok/react/rsc";
-// @ts-ignore
 import StoryblokStory from "@storyblok/react/story";
 
 export default async function Home() {
